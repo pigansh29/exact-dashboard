@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+/* src/components/Dashboard.css */
+.css{
+  display: flex;
+}
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 250px;
+  background: #f8b400;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.add-entry-button {
+  background: #ff8c00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  margin: 15px 0;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul li.active {
+  font-weight: bold;
+  color: #333;
+  background-color: #ff8c00;
+  padding: 10px;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 0;
+}
+
+.header input {
+  padding: 5px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.header svg {
+  margin-left: 15px;
+}
+
+.header img {
+  border-radius: 50%;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.metric-box {
+  width: 22%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+ /* height: 400px; */
+}
+
+.chart {
+  width: 20%;
+  /* height: 270px; */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.chart1 {
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+  align-items: center;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.mmm{
+  display: flex;
+  justify-content: space-between;
+}
+.miles-walked {
+  float: right;
+   width: 20%;
+  background-color: #3978ba; /* Blue background for the Miles Walked component */
+  padding: 20px;
+  border-radius: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.miles-chart {
+ 
+  position: relative;
+  height: 200px; /* Adjust height as necessary */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.miles-walked-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
+.food-entries {
+    padding: 20px;
+   background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin-top: 20px;
+}
+
+.food-entries table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.food-entries th, .food-entries td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }

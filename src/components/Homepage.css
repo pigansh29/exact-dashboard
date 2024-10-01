@@ -1,0 +1,86 @@
+/* src/Homepage.css */
+.homepage-container {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url("https://via.placeholder.com/1200x400");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.header-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.5em;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #f7f7f7;
+}
+
+.stat-item {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.stat-item h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.why-choose-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.why-choose-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.why-choose-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-item {
+  background-color: #f7f7f7;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1em;
+}
